@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Mental Health & Wellness UI/UX Case Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+<header class="case-study-header">
+    <h1>Aura</h1>
+    <p>A modern, minimalist, and calming Mental Health & Wellness mobile application designed to prioritize human-centric well-being.</p>
+</header>
+
+<main class="case-study-container">
+
+    <!-- Screen 1: Splash Screen -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>01. Splash Screen</h2>
+            <p>The first impression is crucial. The splash screen uses soft lavender gradients and a calming illustration to welcome the user, reinforcing the core message instantly.</p>
+            <ul class="feature-list">
+                <li>Minimalist brand logo</li>
+                <li>Welcoming illustration</li>
+                <li>Clear "Get Started" call to action</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen splash-screen" style="background: linear-gradient(180deg, var(--color-lavender) 0%, var(--color-white) 100%); align-items: center; justify-content: space-between; padding: 60px 20px 40px;">
+                <div class="logo-area text-center mt-4">
+                    <div style="width: 80px; height: 80px; background: var(--color-primary); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 10px 25px rgba(155,137,179,0.4);">
+                        <i data-feather="wind" style="color: white; width: 40px; height: 40px;"></i>
+                    </div>
+                    <h1 style="font-size: 2rem; color: var(--color-text-dark); font-weight: 700;">Aura</h1>
+                </div>
+                
+                <div class="splash-illustration" style="width: 250px; height: 250px; background: url('https://illustrations.popsy.co/amber/surreal-hourglass.svg') center/contain no-repeat;">
+                </div>
+
+                <div class="splash-bottom text-center" style="width: 100%;">
+                    <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 10px;">Your Mental<br>Well-being Matters</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 30px; font-size: 0.9rem;">Take a deep breath and start your journey towards a calmer mind.</p>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 2: Onboarding -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>02. Onboarding Screen</h2>
+            <p>An intuitive onboarding process that immediately personalizes the user experience by asking for their current mood using engaging, soft glassmorphic cards.</p>
+            <ul class="feature-list">
+                <li>Friendly greeting</li>
+                <li>Emoji-based mood selection</li>
+                <li>Soft, interactive selection cards</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen onboarding-screen" style="padding: 60px 20px 40px;">
+                <div class="text-center mb-4 mt-4">
+                    <h2 style="font-size: 1.8rem; font-weight: 700; color: var(--color-text-dark);">How are you<br>feeling today?</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 10px;">Select a mood to personalize your feed.</p>
+                </div>
+
+                <div class="mood-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: auto;">
+                    <div class="glass-panel text-center" style="cursor: pointer; border: 2px solid var(--color-primary); background: rgba(255,255,255,0.9);">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😊</div>
+                        <p style="font-weight: 600; color: var(--color-primary);">Happy</p>
+                    </div>
+                    <div class="glass-panel text-center" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😌</div>
+                        <p style="font-weight: 500;">Calm</p>
+                    </div>
+                    <div class="glass-panel text-center" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😔</div>
+                        <p style="font-weight: 500;">Sad</p>
+                    </div>
+                    <div class="glass-panel text-center" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😟</div>
+                        <p style="font-weight: 500;">Anxious</p>
+                    </div>
+                    <div class="glass-panel text-center" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😠</div>
+                        <p style="font-weight: 500;">Angry</p>
+                    </div>
+                    <div class="glass-panel text-center" style="cursor: pointer;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">😴</div>
+                        <p style="font-weight: 500;">Tired</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <button class="btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 3: Home Dashboard -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>03. Home Dashboard</h2>
+            <p>The central hub of the application. It greets the user personally, offers a daily check-in, and provides a quick glance at their wellness progress.</p>
+            <ul class="feature-list">
+                <li>Personalized greeting</li>
+                <li>Daily mood check-in prompt</li>
+                <li>Wellness progress tracker chart</li>
+                <li>Quick access action icons</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen home-screen" style="background: var(--color-bg-main);">
+                <div class="app-header" style="padding-top: 40px;">
+                    <div>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Good Morning,</p>
+                        <h2 style="font-size: 1.5rem; font-weight: 700;">Sarah Doe</h2>
+                    </div>
+                    <div class="icon-btn" style="background: url('https://i.pravatar.cc/100?img=5') center/cover; border: none;"></div>
+                </div>
+
+                <div style="padding: 0 20px 100px;">
+                    <!-- Daily Check-in -->
+                    <div class="glass-panel" style="background: linear-gradient(135deg, var(--color-lavender), var(--color-soft-blue)); color: var(--color-text-dark); margin-bottom: 24px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 4px;">Daily Check-in</h3>
+                                <p style="font-size: 0.85rem; opacity: 0.8;">Take a moment for yourself.</p>
+                            </div>
+                            <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i data-feather="arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Quick Actions</h3>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 24px;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            <div class="icon-btn" style="width: 60px; height: 60px; background: var(--color-white); border-radius: 20px;"><i data-feather="book-open" style="color: var(--color-secondary);"></i></div>
+                            <span style="font-size: 0.8rem; font-weight: 500;">Journal</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            <div class="icon-btn" style="width: 60px; height: 60px; background: var(--color-white); border-radius: 20px;"><i data-feather="wind" style="color: var(--color-accent);"></i></div>
+                            <span style="font-size: 0.8rem; font-weight: 500;">Breathe</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            <div class="icon-btn" style="width: 60px; height: 60px; background: var(--color-white); border-radius: 20px;"><i data-feather="headphones" style="color: var(--color-primary);"></i></div>
+                            <span style="font-size: 0.8rem; font-weight: 500;">Listen</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            <div class="icon-btn" style="width: 60px; height: 60px; background: var(--color-white); border-radius: 20px;"><i data-feather="message-circle" style="color: var(--color-mint-green);"></i></div>
+                            <span style="font-size: 0.8rem; font-weight: 500;">Chat</span>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Wellness Progress</h3>
+                    <div class="glass-panel" style="padding: 24px;">
+                        <div style="display: flex; align-items: flex-end; justify-content: space-between; height: 100px;">
+                            <!-- Mock Chart Bars -->
+                            <div style="width: 30px; height: 40%; background: var(--color-light-purple); border-radius: 8px;"></div>
+                            <div style="width: 30px; height: 60%; background: var(--color-light-purple); border-radius: 8px;"></div>
+                            <div style="width: 30px; height: 80%; background: var(--color-primary); border-radius: 8px;"></div>
+                            <div style="width: 30px; height: 50%; background: var(--color-light-purple); border-radius: 8px;"></div>
+                            <div style="width: 30px; height: 90%; background: var(--color-primary); border-radius: 8px;"></div>
+                            <div style="width: 30px; height: 70%; background: var(--color-light-purple); border-radius: 8px;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 10px; color: var(--color-text-muted); font-size: 0.75rem;">
+                            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Navigation -->
+                <nav class="bottom-nav">
+                    <div class="nav-item active"><i data-feather="home"></i><span>Home</span></div>
+                    <div class="nav-item"><i data-feather="compass"></i><span>Explore</span></div>
+                    <div class="nav-item"><i data-feather="bar-chart-2"></i><span>Stats</span></div>
+                    <div class="nav-item"><i data-feather="user"></i><span>Profile</span></div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 4: Explore Screen -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>04. Explore Screen</h2>
+            <p>A serene space dedicated to meditation, sleep stories, breathing exercises, and mindfulness activities. Cards are soft, featuring rounded corners and soothing imagery.</p>
+            <ul class="feature-list">
+                <li>Meditation and mindfulness cards</li>
+                <li>Sleep stories selection</li>
+                <li>Breathing exercises</li>
+                <li>Wellness articles</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen explore-screen" style="background: var(--color-bg-main); padding: 40px 20px 100px;">
+                <div class="mb-4">
+                    <h2 style="font-size: 1.5rem; font-weight: 700;">Explore</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Find what brings you peace today.</p>
+                </div>
+                
+                <!-- Category Tags -->
+                <div style="display: flex; gap: 10px; overflow-x: auto; margin-bottom: 24px; padding-bottom: 5px;" class="hide-scrollbar">
+                    <span style="background: var(--color-primary); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap;">All</span>
+                    <span style="background: var(--color-white); color: var(--color-text-dark); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; border: 1px solid var(--color-lavender);">Meditation</span>
+                    <span style="background: var(--color-white); color: var(--color-text-dark); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; border: 1px solid var(--color-lavender);">Sleep</span>
+                    <span style="background: var(--color-white); color: var(--color-text-dark); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; border: 1px solid var(--color-lavender);">Focus</span>
+                </div>
+
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Recommended for you</h3>
+                <!-- Big Card -->
+                <div class="glass-panel" style="background: linear-gradient(135deg, var(--color-secondary), var(--color-soft-blue)); color: white; margin-bottom: 24px; padding: 0; overflow: hidden; border: none;">
+                    <div style="height: 120px; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400') center/cover;"></div>
+                    <div style="padding: 16px;">
+                        <h4 style="font-size: 1.1rem; font-weight: 600;">Deep Sleep Ocean</h4>
+                        <p style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 12px;">Sleep Story • 45 min</p>
+                        <button style="background: white; color: var(--color-secondary); border: none; border-radius: 20px; padding: 6px 16px; font-size: 0.8rem; font-weight: 600; cursor: pointer;">Play Now</button>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Mindfulness Activities</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="glass-panel" style="padding: 16px;">
+                        <div style="width: 40px; height: 40px; background: var(--color-mint-green); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <i data-feather="wind" style="color: white; width: 20px;"></i>
+                        </div>
+                        <h4 style="font-size: 0.9rem; font-weight: 600;">Breathing</h4>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted);">5 min</p>
+                    </div>
+                    <div class="glass-panel" style="padding: 16px;">
+                        <div style="width: 40px; height: 40px; background: var(--color-primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <i data-feather="sun" style="color: white; width: 20px;"></i>
+                        </div>
+                        <h4 style="font-size: 0.9rem; font-weight: 600;">Morning Joy</h4>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted);">10 min</p>
+                    </div>
+                </div>
+
+                <nav class="bottom-nav">
+                    <div class="nav-item"><i data-feather="home"></i><span>Home</span></div>
+                    <div class="nav-item active"><i data-feather="compass"></i><span>Explore</span></div>
+                    <div class="nav-item"><i data-feather="bar-chart-2"></i><span>Stats</span></div>
+                    <div class="nav-item"><i data-feather="user"></i><span>Profile</span></div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 5: Mood Tracker -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>05. Mood Tracker Screen</h2>
+            <p>Allows users to actively log their emotional state and add context through notes. Includes weekly analytics right within the tracking view.</p>
+            <ul class="feature-list">
+                <li>Emoji mood selector</li>
+                <li>Notes & journaling input</li>
+                <li>Weekly mood history chart</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen mood-tracker-screen" style="background: var(--color-bg-main); padding: 40px 20px;">
+                <div class="app-header" style="padding: 0 0 24px;">
+                    <div class="icon-btn"><i data-feather="arrow-left"></i></div>
+                    <h3 style="font-size: 1.1rem; font-weight: 600;">Mood Tracker</h3>
+                    <div style="width: 44px;"></div>
+                </div>
+
+                <div class="glass-panel text-center mb-4" style="padding: 30px 20px;">
+                    <h2 style="font-size: 3.5rem; margin-bottom: 10px;">😌</h2>
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--color-primary);">Calm</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 20px;">Today at 10:30 AM</p>
+                    
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                        <span style="font-size: 1.5rem; opacity: 0.5;">😔</span>
+                        <span style="font-size: 1.5rem; opacity: 0.5;">😟</span>
+                        <span style="font-size: 1.5rem; transform: scale(1.2);">😌</span>
+                        <span style="font-size: 1.5rem; opacity: 0.5;">😊</span>
+                        <span style="font-size: 1.5rem; opacity: 0.5;">🤩</span>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Add Note</h3>
+                <textarea class="glass-panel" placeholder="Why are you feeling this way?" style="width: 100%; height: 100px; border: none; font-family: inherit; font-size: 0.9rem; resize: none; margin-bottom: 24px;"></textarea>
+
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Weekly History</h3>
+                <div class="glass-panel" style="display: flex; justify-content: space-between; align-items: flex-end; height: 120px; padding: 20px;">
+                     <!-- Chart -->
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                         <div style="width: 8px; height: 30px; background: var(--color-light-purple); border-radius: 4px;"></div>
+                         <span style="font-size: 0.7rem; color: var(--color-text-muted);">S</span>
+                     </div>
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                         <div style="width: 8px; height: 60px; background: var(--color-primary); border-radius: 4px;"></div>
+                         <span style="font-size: 0.7rem; color: var(--color-text-muted);">M</span>
+                     </div>
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                         <div style="width: 8px; height: 45px; background: var(--color-light-purple); border-radius: 4px;"></div>
+                         <span style="font-size: 0.7rem; color: var(--color-text-muted);">T</span>
+                     </div>
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                         <div style="width: 8px; height: 70px; background: var(--color-primary); border-radius: 4px;"></div>
+                         <span style="font-size: 0.7rem; color: var(--color-text-muted);">W</span>
+                     </div>
+                     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                         <div style="width: 8px; height: 50px; background: var(--color-light-purple); border-radius: 4px;"></div>
+                         <span style="font-size: 0.7rem; color: var(--color-text-muted);">T</span>
+                     </div>
+                </div>
+                
+                <button class="btn-primary mt-4">Save Entry</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 6: Journal Screen -->
+    <section class="screen-section">
+        <div class="screen-info">
+            <h2>06. Journal Screen</h2>
+            <p>A private, secure space for reflection and gratitude. Designed like a minimalist digital notebook with soft typography and shadows.</p>
+            <ul class="feature-list">
+                <li>Past journal entries list</li>
+                <li>Gratitude prompts</li>
+                <li>Floating action button for new entry</li>
+            </ul>
+        </div>
+        <div class="phone-mockup">
+            <div class="screen journal-screen" style="background: var(--color-bg-main); padding: 40px 20px;">
+                <div class="app-header" style="padding: 0 0 24px;">
+                    <div class="icon-btn"><i data-feather="arrow-left"></i></div>
+                    <h3 style="font-size: 1.1rem; font-weight: 600;">My Journal</h3>
+                    <div class="icon-btn"><i data-feather="search"></i></div>
+                </div>
+
+                <div class="glass-panel mb-4" style="background: linear-gradient(135deg, var(--color-white), var(--color-lavender));">
+                    <h4 style="color: var(--color-primary); font-size: 0.9rem; font-weight: 600; margin-bottom: 8px;">Daily Gratitude</h4>
+                    <p style="font-size: 1rem; font-weight: 500; font-style: italic;">"What made you smile today?"</p>
+                </div>
+
+                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 16px;">Recent Entries</h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div class="glass-panel" style="padding: 16px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-size: 0.8rem; color: var(--color-primary); font-weight: 600;">Today, 8:00 PM</span>
+                            <span style="font-size: 1.2rem;">😌</span>
+                        </div>
+                        <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 4px;">A peaceful walk</h4>
+                        <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.4;">I took a long walk in the park today. The weather was perfect and I felt really connected to nature...</p>
+                    </div>
+                    
+                    <div class="glass-panel" style="padding: 16px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-size: 0.8rem; color: var(--color-text-muted); font-weight: 600;">Yesterday</span>
+                            <span style="font-size: 1.2rem;">😟</span>
+                        </div>
+                        <h4 style="font-size: 1rem; font-weight: 600; margin-bottom: 4px;">Work stress</h4>
+                        <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.4;">Felt overwhelmed with the upcoming deadlines. Tried doing some 4-7-8 breathing exercises which helped...</p>
+                    </div>
+                </div>
+
+                <!-- Floating Action Button -->
+                <div style="position: absolute; bottom: 30px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: var(--color-primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(155,137,179,0.4); color: white; cursor: pointer;">
+                    <i data-feather="plus" style="width: 24px; height: 24px;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+    feather.replace();
+</script>
+</body>
+</html>
